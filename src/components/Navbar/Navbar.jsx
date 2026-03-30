@@ -6,7 +6,7 @@ const Navbar = () => {
     const cartIcon = shoppingCart
     const HomeIcon = homeIcon
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="container mx-auto navbar bg-base-100 shadow-sm">
           <div className="navbar-start">
             <div className="dropdown">
               <div
