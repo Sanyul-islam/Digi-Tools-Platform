@@ -1,0 +1,90 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "🎨"
+  },
+  {
+    "id": "prod_002",
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates and expert suggestions.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": "prod_003",
+    "name": "Social Media Kit",
+    "description": "Everything you need to create engaging social media content across platforms.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["500+ post templates", "Story formats", "Editable graphics"],
+    "icon": "📱"
+  },
+  {
+    "id": "prod_004",
+    "name": "UI Components Library",
+    "description": "A complete library of modern UI components for web and mobile apps.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["300+ components", "Figma & Sketch files", "Regular updates"],
+    "icon": "🧩"
+  },
+  {
+    "id": "prod_005",
+    "name": "Logo Maker Suite",
+    "description": "Design stunning logos quickly with customizable templates and assets.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["1000+ logo templates", "Vector exports", "Brand kits"],
+    "icon": "🔷"
+  },
+  {
+    "id": "prod_006",
+    "name": "Presentation Master Pack",
+    "description": "Create impactful presentations with professional slide decks.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["300+ slides", "Animated transitions", "Editable charts"],
+    "icon": "📊"
+  },
+  {
+    "id": "prod_007",
+    "name": "Stock Photos Unlimited",
+    "description": "Access a massive library of high-quality stock images for any project.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["1M+ photos", "Royalty-free", "HD downloads"],
+    "icon": "🖼️"
+  },
+  {
+    "id": "prod_008",
+    "name": "Branding Toolkit",
+    "description": "Build and maintain a consistent brand identity with ease.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Brand guidelines", "Color palettes", "Typography sets"],
+    "icon": "🏷️"
+  }
+]

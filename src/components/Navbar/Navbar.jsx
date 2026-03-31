@@ -51,7 +51,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <a>
+            <a className='hidden md:flex'>
               <img src={HomeIcon} alt="" />
             </a>
           </div>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <a className="btn rounded-full">login</a>
               </li>
               <li>
-                <a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
+                <a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-[10px] md:text-[16px]">
                   Get Started
                 </a>
               </li>
