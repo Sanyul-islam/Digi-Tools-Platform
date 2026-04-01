@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DigitalTools = () => {
+const DigitalTools = ({setactiveTab }) => {
   return (
     <div className="bg-base-100 flex items-start justify-center pt-16">
       <div className="rounded-xl p-10 text-center max-w-3xl w-full">
@@ -13,13 +13,23 @@ const DigitalTools = () => {
           designed to boost your productivity and creativity.
         </p>
 
-        <div className="flex items-center justify-center gap-2 mt-6">
-          <button className="btn btn-primary rounded-full px-6 bg-linear-to-r from-indigo-600 to-purple-600">
-            Products
-          </button>
-          <button className="btn btn-primary rounded-full px-6">
-            Cart (2)
-          </button>
+        {/* name of each tab group should be unique */}
+        <div className="tabs tabs-box flex items-center justify-center gap-2 mt-6 bg-base-100">
+          <input
+            type="radio"
+            name="my_tabs_1"
+            className="tab btn btn-ghost rounded-full px-6 checked:bg-linear-to-r checked:from-indigo-600 checked:to-purple-600 checked:text-white"
+            aria-label="Products"
+            onClick={() => setactiveTab("Products")}
+            defaultChecked
+          />
+          <input
+            type="radio"
+            name="my_tabs_1"
+            className="tab btn btn-ghost rounded-full px-6 checked:bg-linear-to-r checked:from-indigo-600 checked:to-purple-600 checked:text-white"
+            aria-label="Cart (2)"
+            onClick={() => setactiveTab("Cart")}
+          />
         </div>
       </div>
     </div>
