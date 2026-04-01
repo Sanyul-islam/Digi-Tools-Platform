@@ -10,6 +10,7 @@ import { useState } from 'react'
 import ShowCart from './components/ShowCart/ShowCart'
 import GetStarted from './components/GetStarted/GetStarted'
 import SubscriptionPlan from './components/SubscriptionPlan/SubscriptionPlan'
+import FooterBanner from './components/footerbanner/FooterBanner'
 
 
 const getApi = async()=>{
@@ -36,7 +37,7 @@ const [carts,setcarts] = useState([])
       )}
       <GetStarted></GetStarted>
       <SubscriptionPlan></SubscriptionPlan>
-
+      <FooterBanner></FooterBanner>
       <Footer></Footer>
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const CardBtn = ({ card, setcarts }) => {
   const [isbuy, setisbuy] = useState(false);
@@ -9,6 +10,7 @@ const CardBtn = ({ card, setcarts }) => {
       const exists = prev.some((item) => item.id === card.id);
       return exists ? prev : [...prev, card];
     });
+    toast.success("Product Added Successfull")
   };
 
   return (
