@@ -1,6 +1,7 @@
 import React from 'react';
 
-const DigitalTools = ({setactiveTab }) => {
+const DigitalTools = ({ carts ,setactiveTab }) => {
+  const cartCount = carts.length
   return (
     <div className="bg-base-100 flex items-start justify-center pt-16">
       <div className="rounded-xl p-10 text-center max-w-3xl w-full">
@@ -27,7 +28,7 @@ const DigitalTools = ({setactiveTab }) => {
             type="radio"
             name="my_tabs_1"
             className="tab btn btn-ghost rounded-full px-6 checked:bg-linear-to-r checked:from-indigo-600 checked:to-purple-600 checked:text-white"
-            aria-label="Cart (2)"
+            aria-label={`Cart (${cartCount})`}
             onClick={() => setactiveTab("Cart")}
           />
         </div>

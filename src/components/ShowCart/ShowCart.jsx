@@ -1,9 +1,16 @@
 import React from 'react';
 import Card from '../Card/Card'
 
-const ShowCart = ({ carts }) => {
-    console.log(carts)
-    const totalPrice = carts.reduce((sum,item) => sum+item.price,0)
+const ShowCart = ({ carts, setcarts }) => {
+  
+  const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
+  const handlepayment = ()=>{
+    setcarts([])
+  }
+  const handleDelet = (item)=>{
+    const filteredArray = carts.filter(crt => crt.id !== item.id)
+    setcarts(filteredArray)
+  }
   return (
     <div className="bg-base-200 min-h-screen flex items-start justify-center pt-16">
       <div className="bg-base-100 w-full max-w-2xl rounded-xl p-6 border border-base-300">
@@ -33,7 +40,7 @@ const ShowCart = ({ carts }) => {
               </div>
 
               {/* Remove */}
-              <button className="text-pink-500 text-sm hover:underline">
+              <button onClick={()=>handleDelet(item)} className="text-red-500 text-sm hover:underline">
                 Remove
               </button>
             </div>
@@ -47,7 +54,10 @@ const ShowCart = ({ carts }) => {
         </div>
 
         {/* Checkout Button */}
-        <button className="btn w-full mt-4 text-white border-0 bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-full">
+        <button
+          onClick={handlepayment}
+          className="btn w-full mt-4 text-white border-0 bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-full"
+        >
           Proceed To Checkout
         </button>
       </div>

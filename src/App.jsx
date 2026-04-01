@@ -24,13 +24,17 @@ const Showcart = ()=>{
 }
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <Herosection></Herosection>
       <RatingSection></RatingSection>
-      <DigitalTools setactiveTab={setactiveTab}></DigitalTools>
-      {activeTab == "Products" && <Card Apipromise={Apipromise} carts={carts} setcarts={setcarts}></Card>}
-      {activeTab == "Cart" && <ShowCart carts={carts}></ShowCart>}
-      
+      <DigitalTools carts={carts} setactiveTab={setactiveTab}></DigitalTools>
+      {activeTab == "Products" && (
+        <Card Apipromise={Apipromise} carts={carts} setcarts={setcarts}></Card>
+      )}
+      {activeTab == "Cart" && (
+        <ShowCart carts={carts} setcarts={setcarts}></ShowCart>
+      )}
+
       <Footer></Footer>
     </>
   );

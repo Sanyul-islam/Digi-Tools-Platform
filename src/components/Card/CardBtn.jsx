@@ -59,7 +59,7 @@ const CardBtn = ({ card, carts, setcarts }) => {
           onClick={Handleisbuy}
           className="btn w-full rounded-full text-white border-0 bg-linear-to-r from-indigo-500 to-purple-500 hover:from-purple-600 hover:to-indigo-600"
         >
-          {isbuy ? "Purchased" : "Buy Now"}
+          {isbuy ? "Added To Chart" : "Buy Now"}
         </button>
       </div>
     </div>
