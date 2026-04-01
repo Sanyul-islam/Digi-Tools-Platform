@@ -8,7 +8,7 @@ const Herosection = () => {
     const badge = Badge
     const playIcon = Playicon
     return (
-      <div className="hero container w-10/12 mx-auto py-20">
+      <div className="hero container w-10/12 mx-auto py-5 md:py-15">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img src={bannerImage} />
           <div>
