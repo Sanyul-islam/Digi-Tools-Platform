@@ -8,6 +8,8 @@ import DigitalTools from "./components/DigitalTools/DigitalTools";
 import Card from './components/Card/Card'
 import { useState } from 'react'
 import ShowCart from './components/ShowCart/ShowCart'
+import GetStarted from './components/GetStarted/GetStarted'
+import SubscriptionPlan from './components/SubscriptionPlan/SubscriptionPlan'
 
 
 const getApi = async()=>{
@@ -18,10 +20,8 @@ const Apipromise = getApi()
 function App() {
 const [activeTab,setactiveTab] = useState("Products")
 const [carts,setcarts] = useState([])
-console.log(carts)
-const Showcart = ()=>{
 
-}
+
   return (
     <>
       <Navbar carts={carts}></Navbar>
@@ -34,6 +34,8 @@ const Showcart = ()=>{
       {activeTab == "Cart" && (
         <ShowCart carts={carts} setcarts={setcarts}></ShowCart>
       )}
+      <GetStarted></GetStarted>
+      <SubscriptionPlan></SubscriptionPlan>
 
       <Footer></Footer>
     </>

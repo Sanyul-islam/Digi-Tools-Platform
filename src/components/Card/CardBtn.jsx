@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 
-const CardBtn = ({ card, carts, setcarts }) => {
+const CardBtn = ({ card, setcarts }) => {
   const [isbuy, setisbuy] = useState(false);
   const Handleisbuy = () => {
     setisbuy(true);
-    setcarts([...carts,card])
+
+    setcarts((prev) => {
+      const exists = prev.some((item) => item.id === card.id);
+      return exists ? prev : [...prev, card];
+    });
   };
 
   return (
